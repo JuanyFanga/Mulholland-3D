@@ -47,7 +47,11 @@ public class Interact : MonoBehaviour
             {
                 // Poner el código que queramos que le pase al target que hayamos tocado
                 // Por ahora se desactiva y ya está
-                target.SetActive(false);
+                //target.SetActive(false);
+                if (target.TryGetComponent<InteractableObject>(out var i))
+                {
+                    i.OnInteract();
+                }
             }
         }
 
