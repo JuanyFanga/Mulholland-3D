@@ -14,6 +14,14 @@ public class Interact : MonoBehaviour
         InteractInput();
     }
 
+    private void InteractInput()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ProcessRaycast();
+        }
+    }
+
     private void ProcessRaycast()
     {
         RaycastHit hit;
@@ -41,21 +49,11 @@ public class Interact : MonoBehaviour
                 // Por ahora se desactiva y ya está
                 target.SetActive(false);
             }
-            
-
         }
 
         else
         {
             return;
-        }
-    }
-
-    private void InteractInput()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ProcessRaycast();
         }
     }
 }
