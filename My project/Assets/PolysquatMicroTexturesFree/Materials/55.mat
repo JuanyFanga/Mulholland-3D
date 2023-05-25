@@ -143,8 +143,8 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TextureNumber: 55
-    - _TextureStartLayer: 13
+    - _TextureNumber: 128
+    - _TextureStartLayer: 15
     - _TextureStartX: 1
     - _TextureStartY: 1
     - _UVSec: 0
@@ -170,6 +170,6 @@ Material:
     - _EmissionColor3Blend: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4Blend: {r: 0, g: 0, b: 0, a: 1}
-    - _GridStart: {r: 64, g: 64, b: 13, a: 0}
-    - _MainOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _GridStart: {r: 64, g: 64, b: 15, a: 0}
+    - _MainOffset: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []

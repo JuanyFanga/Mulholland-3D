@@ -171,5 +171,5 @@ Material:
     - _EmissionColor4: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4Blend: {r: 0, g: 0, b: 0, a: 1}
     - _GridStart: {r: 0, g: 64, b: 4, a: 0}
-    - _MainOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _MainOffset: {r: 3, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
