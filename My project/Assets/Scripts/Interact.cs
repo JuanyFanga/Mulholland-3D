@@ -7,6 +7,8 @@ public class Interact : MonoBehaviour
     [SerializeField] Camera FPCamera;
     [SerializeField] float range = 50f;
 
+    [SerializeField] GameObject handedGameObject;
+
     private void Update()
     {
         Debug.DrawRay(FPCamera.transform.position, FPCamera.transform.forward * range, Color.blue);
@@ -52,6 +54,16 @@ public class Interact : MonoBehaviour
                 {
                     i.OnInteract();
                 }
+            }
+
+            if (target.CompareTag("Pickupable"))
+            {
+                MeshFilter itemMeshFilter = hit.transform.GetComponent<MeshFilter>();
+                MeshRenderer itemmMeshRenderer = hit.transform.GetComponent<MeshRenderer>();
+
+                handedGameObject.transform.localScale = hit.transform.localScale;
+                handedGameObject.GetComponent<MeshFilter>().mesh = itemMeshFilter.mesh;
+                handedGameObject.GetComponent<MeshRenderer>().materials = itemmMeshRenderer.materials;
             }
         }
 
