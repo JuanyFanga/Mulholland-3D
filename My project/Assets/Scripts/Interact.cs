@@ -9,10 +9,19 @@ public class Interact : MonoBehaviour
 
     [SerializeField] GameObject handedGameObject;
 
+    [Header("Loop 1")]
+    [SerializeField] bool hasSomethingInHand;
+    [SerializeField] int backpackThingsDone = 0;
+    [SerializeField] AudioSource[] audioSources;
+
+    private void Awake()
+    {
+        audioSources[0] = transform.GetChild(3).GetChild(0).GetComponent<AudioSource>();
+    }
+
     private void Update()
     {
         Debug.DrawRay(FPCamera.transform.position, FPCamera.transform.forward * range, Color.blue);
-
         InteractInput();
     }
 
@@ -37,7 +46,6 @@ public class Interact : MonoBehaviour
 
             Debug.Log("I hit this thing: " + hit.transform.name);
 
-
             GameObject target = hit.transform.gameObject;
 
             if (target == null)
@@ -58,13 +66,56 @@ public class Interact : MonoBehaviour
 
             if (target.CompareTag("Pickupable"))
             {
-                MeshFilter itemMeshFilter = hit.transform.GetComponent<MeshFilter>();
-                MeshRenderer itemmMeshRenderer = hit.transform.GetComponent<MeshRenderer>();
-                hit.transform.gameObject.SetActive(false);
+                if (hasSomethingInHand)
+                    return;
 
-                handedGameObject.transform.localScale = hit.transform.localScale;
-                handedGameObject.GetComponent<MeshFilter>().mesh = itemMeshFilter.mesh;
-                handedGameObject.GetComponent<MeshRenderer>().materials = itemmMeshRenderer.materials;
+                else
+                {
+                    MeshFilter itemMeshFilter = hit.transform.GetComponent<MeshFilter>();
+                    MeshRenderer itemmMeshRenderer = hit.transform.GetComponent<MeshRenderer>();
+                    hit.transform.gameObject.SetActive(false);
+
+                    handedGameObject.transform.localScale = hit.transform.localScale;
+                    handedGameObject.GetComponent<MeshFilter>().mesh = itemMeshFilter.mesh;
+                    handedGameObject.GetComponent<MeshRenderer>().materials = itemmMeshRenderer.materials;
+                    hasSomethingInHand = true;
+                }
+            }
+
+            if (target.CompareTag("Backpack"))
+            {
+                if (!hasSomethingInHand)
+                    return;
+
+                else
+                {
+                    handedGameObject.GetComponent<MeshFilter>().mesh = null;
+                    handedGameObject.GetComponent<MeshRenderer>().materials = new Material[0];
+
+                    backpackThingsDone++;
+                    hasSomethingInHand = false;
+
+                    switch (backpackThingsDone)
+                    {
+                        case 0:
+                            break;
+
+                        case 1:
+                            if (target.TryGetComponent<InteractableObject>(out var i))
+                            {
+                                i.OnInteract();
+                            }
+                            break;
+
+                        case 2:
+                            if (handedGameObject.TryGetComponent<InteractableObject>(out var j))
+                            {
+                                target.gameObject.SetActive(false);
+                                j.OnInteract();
+                            }
+                            break;
+                    }
+                }
             }
         }
 

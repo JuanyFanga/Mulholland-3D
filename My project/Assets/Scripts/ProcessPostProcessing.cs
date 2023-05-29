@@ -28,7 +28,7 @@ public class ProcessPostProcessing : MonoBehaviour
 
     public void ChangeBloom()
     {
-        bloomBool = !bloomBool;
+        bloomBool = true;
     }
 
     public void StatementsForPP()

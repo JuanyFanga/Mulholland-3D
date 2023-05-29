@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class TriggerFinalLoop1 : MonoBehaviour
 {
-    [SerializeField] float cooldown = 6f;
+    [SerializeField] 
+    float cooldown = 6f;
+
+    [SerializeField] 
+    ProcessPostProcessing processPP;
 
     private void Update()
     {
@@ -19,9 +23,11 @@ public class TriggerFinalLoop1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
+            processPP.ChangeBloom();
             cooldown = 6f;
+            Debug.Log("TRIGEREEOOOO");
         }
     }
 }

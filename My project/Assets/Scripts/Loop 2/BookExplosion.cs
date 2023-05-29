@@ -29,7 +29,7 @@ public class BookExplosion : MonoBehaviour
     }
 
     [ContextMenu("Explo")]
-    private void Explosion()
+    public void Explosion()
     {
         var rbs = transform.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)

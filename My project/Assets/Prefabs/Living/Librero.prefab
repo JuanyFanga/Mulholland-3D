@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2853596907500069590}
   - component: {fileID: 102178208149187092}
   - component: {fileID: 6854090391800370064}
+  - component: {fileID: 1911939067}
   m_Layer: 0
   m_Name: Librero
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 631427723905688250}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 17.31499, y: -0.4138102, z: 10.61869}
-  m_LocalScale: {x: 0.6920024, y: 0.6920024, z: 0.6920024}
+  m_LocalScale: {x: 0.6920024, y: 0.69200236, z: 0.69200236}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1911939067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631427723905688250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4226377, y: 0.5920042, z: 3.645129}
+  m_Center: {x: -0.0000010132788, y: -0.000001356006, z: 0.00000047683716}
