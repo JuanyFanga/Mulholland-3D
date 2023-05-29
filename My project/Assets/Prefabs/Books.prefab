@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionOrigin: {fileID: 1980892980}
-  explosionForce: 80
+  explosionForce: 200
   explosionRange: 1.06
 --- !u!136 &2126477672843889715
 CapsuleCollider:
