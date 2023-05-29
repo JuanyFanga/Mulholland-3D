@@ -60,6 +60,7 @@ public class Interact : MonoBehaviour
             {
                 MeshFilter itemMeshFilter = hit.transform.GetComponent<MeshFilter>();
                 MeshRenderer itemmMeshRenderer = hit.transform.GetComponent<MeshRenderer>();
+                hit.transform.gameObject.SetActive(false);
 
                 handedGameObject.transform.localScale = hit.transform.localScale;
                 handedGameObject.GetComponent<MeshFilter>().mesh = itemMeshFilter.mesh;
