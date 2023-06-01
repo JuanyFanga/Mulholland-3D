@@ -8,6 +8,8 @@ public class Interact : MonoBehaviour
     [SerializeField] float range = 50f;
 
     [SerializeField] GameObject handedGameObject;
+    [SerializeField] GameObject interactuableCanvasImage;
+    [SerializeField] GameObject pickupableCanvasImage;
 
     [Header("Loop 1")]
     [SerializeField] bool hasSomethingInHand;
@@ -30,6 +32,26 @@ public class Interact : MonoBehaviour
 
     private void InteractInput()
     {
+        RaycastHit hit;
+        if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
+        {
+            if (hit.transform.CompareTag("Interactuable"))
+            {
+                interactuableCanvasImage.SetActive(true);
+            }
+
+            else if (hit.transform.CompareTag("Pickupable"))
+            {
+                pickupableCanvasImage.SetActive(true);
+            }
+
+            else
+            {
+                interactuableCanvasImage.SetActive(false);
+                pickupableCanvasImage.SetActive(false);
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             ProcessRaycast();
