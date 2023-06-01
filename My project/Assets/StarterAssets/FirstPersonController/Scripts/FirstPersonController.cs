@@ -9,8 +9,14 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM
 	[RequireComponent(typeof(PlayerInput))]
 #endif
+
+	
 	public class FirstPersonController : MonoBehaviour
 	{
+        [Header("Classes")]
+		[SerializeField]
+		Interact interactClass;
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
@@ -88,6 +94,8 @@ namespace StarterAssets
 
 		private void Awake()
 		{
+			interactClass = FindObjectOfType<Interact>();
+
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
@@ -171,6 +179,9 @@ namespace StarterAssets
 			// accelerate or decelerate to target speed
 			if (currentHorizontalSpeed < targetSpeed - speedOffset || currentHorizontalSpeed > targetSpeed + speedOffset)
 			{
+				Debug.Log("Youre Moving!!1");
+				//interactClass.PlayFootSound();}
+
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
 				_speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude, Time.deltaTime * SpeedChangeRate);

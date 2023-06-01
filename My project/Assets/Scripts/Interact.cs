@@ -15,8 +15,11 @@ public class Interact : MonoBehaviour
     [SerializeField] AudioSource[] audioSources;
 
     private void Awake()
-    {
-        audioSources[0] = transform.GetChild(3).GetChild(0).GetComponent<AudioSource>();
+    {   
+        for (int i = 0; i < audioSources.Length; i++)
+        {
+            audioSources[i] = transform.GetChild(3).GetChild(i).GetComponent<AudioSource>();
+        }
     }
 
     private void Update()
@@ -71,6 +74,7 @@ public class Interact : MonoBehaviour
 
                 else
                 {
+                    audioSources[1].Play();
                     MeshFilter itemMeshFilter = hit.transform.GetComponent<MeshFilter>();
                     MeshRenderer itemmMeshRenderer = hit.transform.GetComponent<MeshRenderer>();
                     hit.transform.gameObject.SetActive(false);
@@ -124,4 +128,10 @@ public class Interact : MonoBehaviour
             return;
         }
     }
+
+    public void PlayFootSound()
+    {
+        audioSources[Random.Range(4,7)].Play();
+    }
+
 }
