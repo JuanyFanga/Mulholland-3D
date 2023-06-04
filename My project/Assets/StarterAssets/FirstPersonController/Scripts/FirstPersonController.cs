@@ -16,6 +16,8 @@ namespace StarterAssets
         [Header("Classes")]
 		[SerializeField]
 		Interact interactClass;
+		[SerializeField]
+		private float moveCooldown;
 
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
@@ -120,6 +122,12 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			moveCooldown -= Time.deltaTime;
+			if (moveCooldown <= 0)
+            {
+				moveCooldown = 0;
+            }
+
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -179,8 +187,7 @@ namespace StarterAssets
 			// accelerate or decelerate to target speed
 			if (currentHorizontalSpeed < targetSpeed - speedOffset || currentHorizontalSpeed > targetSpeed + speedOffset)
 			{
-				Debug.Log("Youre Moving!!1");
-				//interactClass.PlayFootSound();}
+				
 
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
@@ -203,10 +210,18 @@ namespace StarterAssets
 			{
 				// move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
+				if (moveCooldown <= 0)
+				{
+					Debug.Log("Youre Moving!!1");
+					interactClass.PlayFootSound();
+					moveCooldown = 0.75f;
+				}
 			}
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+			
 		}
 
 		private void JumpAndGravity()

@@ -153,7 +153,7 @@ public class Interact : MonoBehaviour
 
     public void PlayFootSound()
     {
-        audioSources[Random.Range(4,7)].Play();
+        audioSources[Random.Range(3,6)].Play();
     }
 
 }
