@@ -5,12 +5,31 @@ using TMPro;
 
 public class DeactivatePC : MonoBehaviour
 {
-    [SerializeField] GameObject[] deactivateObjects;
-    [SerializeField] GameObject appearanceObject;
-    [SerializeField] GameObject doorChanger;
-    [SerializeField] GameObject pcObject;
-    [SerializeField] TMP_Text tmproText;
-    [SerializeField] int numberOfInteractions;
+    [SerializeField]
+    Animator animator;
+
+    [SerializeField] 
+    GameObject[] deactivateObjects;
+
+    [SerializeField] 
+    GameObject appearanceObject;
+
+    [SerializeField] 
+    GameObject doorChanger;
+
+    [SerializeField] 
+    GameObject pcObject;
+
+    [SerializeField] 
+    TMP_Text tmproText;
+
+    [SerializeField] 
+    int numberOfInteractions;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void ChangeTexts()
     {
@@ -67,6 +86,11 @@ public class DeactivatePC : MonoBehaviour
         {
             obj.SetActive(false);
         }
+    }
+
+    public void ChangeSpeed()
+    {
+        animator.speed -= 0.01f;
     }
         
 }

@@ -8,16 +8,24 @@ public class TriggerFinalLoop1 : MonoBehaviour
     [SerializeField] 
     float cooldown = 6f;
 
+    [SerializeField]
+    int sceneIndex;
+
     [SerializeField] 
     ProcessPostProcessing processPP;
 
     private void Update()
     {
+        ChangeScene();
+    }
+
+    public void ChangeScene()
+    {
         cooldown -= Time.deltaTime;
 
         if (cooldown <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(sceneIndex);
         }
     }
 
