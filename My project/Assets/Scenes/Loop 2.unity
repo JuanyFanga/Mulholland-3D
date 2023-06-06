@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4935873513938255460, guid: 8d82b1cea7645b54fb24adce949dcf11, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4935873513938255460, guid: 8d82b1cea7645b54fb24adce949dcf11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3800,7 +3800,7 @@ MonoBehaviour:
           m_StringArgument: Activator
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1660418801}
+      - m_Target: {fileID: 1660418793}
         m_TargetAssemblyTypeName: CameraShakerAscensor, Assembly-CSharp
         m_MethodName: Shake
         m_Mode: 1
@@ -3950,7 +3950,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742607400
 GameObject:
@@ -4294,7 +4294,7 @@ PrefabInstance:
       objectReference: {fileID: 551196131}
     - target: {fileID: 7815834865830569525, guid: 0dda13a3962ac6042abe42dec92a8c02, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7815834865988306241, guid: 0dda13a3962ac6042abe42dec92a8c02, type: 3}
       propertyPath: m_Mesh
@@ -6524,7 +6524,7 @@ MonoBehaviour:
   onInteraction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1660418801}
+      - m_Target: {fileID: 1660418793}
         m_TargetAssemblyTypeName: CameraShakerAscensor, Assembly-CSharp
         m_MethodName: Shake
         m_Mode: 1
@@ -7988,7 +7988,7 @@ MonoBehaviour:
           m_StringArgument: Activator
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1660418801}
+      - m_Target: {fileID: 1660418793}
         m_TargetAssemblyTypeName: CameraShakerAscensor, Assembly-CSharp
         m_MethodName: Shake
         m_Mode: 1
@@ -8105,9 +8105,9 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1264080932, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   m_PrefabInstance: {fileID: 1507867789113976211}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1660418801 stripped
+--- !u!114 &1660418793 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1270105252256582151, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1660418801, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
   m_PrefabInstance: {fileID: 1507867789113976211}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -9264,7 +9264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157288152644067311, guid: db77d838c9e98b245a5dcad0d05b98d5, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9157288152644067311, guid: db77d838c9e98b245a5dcad0d05b98d5, type: 3}
       propertyPath: m_LocalPosition.x
