@@ -11,7 +11,7 @@ public class ProcessPostProcessing : MonoBehaviour
     Bloom bloom;
 
     [SerializeField] bool bloomBool;
-    float bloomSpeed = 40f;
+    float bloomSpeed = 200f;
 
     private void Awake()
     {

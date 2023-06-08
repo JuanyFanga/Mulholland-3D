@@ -95,9 +95,12 @@ public class Interact : MonoBehaviour
                     }
                     break;
                 case "Pickupable":
-                    if (hasSomethingInHand)
-                        return;
 
+                    if (hasSomethingInHand)
+                    {
+                        return;
+                    }
+                        
                     else
                     {
                         audioSources[1].Play();
@@ -109,6 +112,12 @@ public class Interact : MonoBehaviour
                         handedGameObject.GetComponent<MeshFilter>().mesh = itemMeshFilter.mesh;
                         handedGameObject.GetComponent<MeshRenderer>().materials = itemmMeshRenderer.materials;
                         hasSomethingInHand = true;
+
+                        if (hit.transform.gameObject.TryGetComponent<InteractableObject>(out var j))
+                        {
+                            j.OnInteract();
+                        }
+
                     }
                     break;
                 case "Backpack":

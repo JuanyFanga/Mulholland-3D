@@ -14,6 +14,13 @@ public class TriggerFinalLoop1 : MonoBehaviour
     [SerializeField] 
     ProcessPostProcessing processPP;
 
+    FadeInFadeOut fadeScript;
+
+    private void Awake()
+    {
+        fadeScript = FindObjectOfType<FadeInFadeOut>();
+    }
+
     private void Update()
     {
         ChangeScene();
@@ -33,9 +40,9 @@ public class TriggerFinalLoop1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            fadeScript.InitializeFadeIn();
             processPP.ChangeBloom();
             cooldown = 6f;
-            Debug.Log("TRIGEREEOOOO");
         }
     }
 }
