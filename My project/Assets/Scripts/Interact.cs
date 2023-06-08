@@ -30,9 +30,14 @@ public class Interact : MonoBehaviour
         InteractInput();
     }
 
+    private void OnDrawGizmosSelected()
+    {
+   
+    }
     private void InteractInput()
     {
         RaycastHit hit;
+        Debug.DrawRay(FPCamera.transform.position, FPCamera.transform.forward,Color.red);
         if (Physics.Raycast(FPCamera.transform.position, FPCamera.transform.forward, out hit, range))
         {
             if (hit.transform.CompareTag("Interactuable"))
