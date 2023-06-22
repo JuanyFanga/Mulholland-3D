@@ -50,12 +50,12 @@ public class DeactivatePC : MonoBehaviour
                 case 0:
                     tmproText.text = "Rechazado: " +
                                 "Debiste haber " +
-                                "estudiado más ";
+                                "estudiado mas ";
                     break;
 
                 case 1:
                     tmproText.text = "Rechazado: " +
-                                "Podrías haber " +
+                                "Podrias haber " +
                                 "elegido mejor ";
                     break;
 
@@ -68,7 +68,7 @@ public class DeactivatePC : MonoBehaviour
                 case 3:
                     tmproText.text = "Rechazado: " +
                                 "Si tan solo " +
-                                "puedieras volver";
+                                "pudieras volver";
                     break;
 
                 default:

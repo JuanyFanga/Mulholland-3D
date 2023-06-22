@@ -15,7 +15,7 @@ public class AscensorTransicion : MonoBehaviour
 
     private void Update()
     {
-        float distanceBetweenEndPointAndPlayer = playerGO.transform.position.x - endPoint.transform.position.x;
+        float distanceBetweenEndPointAndPlayer = playerGO.transform.position.z - endPoint.transform.position.z;
         Debug.Log("Distance is: " + distanceBetweenEndPointAndPlayer);
 
         if (distanceBetweenEndPointAndPlayer > 0)
@@ -25,14 +25,13 @@ public class AscensorTransicion : MonoBehaviour
 
         Vector3 elevatorPosition = new Vector3();
 
-        float distanceBetweenElevatorAndPlayer = Mathf.Abs(playerGO.transform.position.x - transform.position.x);
+        float distanceBetweenElevatorAndPlayer = Mathf.Abs(playerGO.transform.position.z - transform.position.z);
 
         if (distanceBetweenElevatorAndPlayer <= 7)
         {
             elevatorPosition = transform.position;
-            elevatorPosition.x += 7 - distanceBetweenElevatorAndPlayer;
+            elevatorPosition.z += 7 - distanceBetweenElevatorAndPlayer;
             transform.position = elevatorPosition;
         }
     }
 }
-    

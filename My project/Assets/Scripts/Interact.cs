@@ -99,6 +99,7 @@ public class Interact : MonoBehaviour
                         i.OnInteract();
                     }
                     break;
+
                 case "Pickupable":
 
                     if (hasSomethingInHand)
@@ -125,12 +126,14 @@ public class Interact : MonoBehaviour
 
                     }
                     break;
+
                 case "Backpack":
 
                     if (!hasSomethingInHand)
                     {
                         return;
                     } 
+
                     else
                     {
                         handedGameObject.GetComponent<MeshFilter>().mesh = null;
@@ -159,12 +162,9 @@ public class Interact : MonoBehaviour
                                 }
                                 break;
                         }
-
                     }
                       break;
-                    
             }
-
         }
 
         else
