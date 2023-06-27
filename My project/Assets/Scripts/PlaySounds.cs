@@ -5,10 +5,15 @@ using UnityEngine;
 public class PlaySounds : MonoBehaviour
 {
     [SerializeField] AudioClip m_Clip;
+    AudioSource audioSource;
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void PlaySound()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
+       
 
         audioSource.PlayOneShot(m_Clip);
     }
