@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8594054829841461147}
   - component: {fileID: 613030777712757832}
   - component: {fileID: 19574760441084170}
+  - component: {fileID: 5135998002754180254}
   m_Layer: 0
   m_Name: Heladera 3
   m_TagString: Untagged
@@ -85,3 +86,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5135998002754180254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029464144731685662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4108684, y: 1.4108613, z: 3.7771041}
+  m_Center: {x: -0.0000001410382, y: -0.0000037173195, z: 1.1831179}
