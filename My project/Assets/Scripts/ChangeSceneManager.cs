@@ -5,36 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneManager : MonoBehaviour
 {
-    public static ChangeSceneManager Instance { get; private set; }
-    private void Awake()
+    //public static ChangeSceneManager Instance { get; private set; }
+    //private void Awake()
+    //{
+    //    // If there is an instance, and it's not me, delete myself.
+
+    //    if (Instance == null)
+    //    {
+    //        Instance = this;
+    //        DontDestroyOnLoad(gameObject);
+    //    }
+
+    //    else
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+    //private void Update()
+    //{
+    //    ChangeSceneToDebug();
+    //}
+
+    //private void ChangeSceneToDebug()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.P))
+    //    {
+    //        ChangeScene();
+    //    }
+    //}
+
+    public void ChangeScene()
     {
-        // If there is an instance, and it's not me, delete myself.
+        int actualScene = SceneManager.GetActiveScene().buildIndex;
+    int nextScene = actualScene + 1;
 
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void Update()
-    {
-        ChangeScene();
-    }
-
-    private void ChangeScene()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            int actualScene = SceneManager.GetActiveScene().buildIndex;
-            int nextScene = actualScene + 1;
-
-            Debug.Log("Next Scene is: " + nextScene);
+    Debug.Log("Next Scene is: " + nextScene);
             Debug.Log("Total of scenes is: " + SceneManager.sceneCountInBuildSettings);
 
             if (nextScene >= SceneManager.sceneCountInBuildSettings)
@@ -46,6 +52,5 @@ public class ChangeSceneManager : MonoBehaviour
             {
                 SceneManager.LoadScene(nextScene);
             }
-        }
     }
 }

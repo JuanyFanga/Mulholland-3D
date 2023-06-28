@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loop 4.unity
     guid: 33599e76a4dda1c47887e039ad5d9516
+  - enabled: 1
+    path: Assets/Scenes/Loop 5.unity
+    guid: f94b33fa48708bf4bbfaa8e48ae5167e
+  - enabled: 1
+    path: Assets/Scenes/Loop 6.unity
+    guid: 2b26aad8209c0d94dac4073e9c1fcbd3
   m_configObjects: {}
