@@ -80,12 +80,12 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _GridMult: 1
-    - _GridSize: 1
+    - _GridMult: 2
+    - _GridSize: 0.5
     - _GridStrength: 0.28
     - _HasColorBlend: 0
     - _HasPBR: 0
-    - _HasRotation: 0
+    - _HasRotation: 1
     - _Metallic: 0
     - _MetalnessColor1: 0
     - _MetalnessColor1Blend: 0
@@ -131,7 +131,7 @@ Material:
     - _OcclusionStrength: 1
     - _OcclusionStrengthBlend: 1
     - _Parallax: 0.02
-    - _Rotation: 0
+    - _Rotation: 1
     - _SmoothnessColor1: 0.5
     - _SmoothnessColor1Blend: 0.5
     - _SmoothnessColor2: 0.5
@@ -144,7 +144,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _TextureNumber: 43
-    - _TextureStartLayer: 10
+    - _TextureStartLayer: 6
     - _TextureStartX: 1
     - _TextureStartY: 1
     - _UVSec: 0
@@ -170,6 +170,6 @@ Material:
     - _EmissionColor3Blend: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4Blend: {r: 0, g: 0, b: 0, a: 1}
-    - _GridStart: {r: 64, g: 64, b: 10, a: 0}
-    - _MainOffset: {r: 1, g: 2.95, b: 0, a: 0}
+    - _GridStart: {r: 64, g: 64, b: 6, a: 0}
+    - _MainOffset: {r: 0.94, g: 1.69, b: 0, a: 0}
   m_BuildTextureStacks: []
