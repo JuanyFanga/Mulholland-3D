@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 3702824792861692064}
   m_Layer: 6
   m_Name: book0 (1)
-  m_TagString: Pickupable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 771197270005340537}
   m_Layer: 6
   m_Name: book0 (2)
-  m_TagString: Pickupable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
