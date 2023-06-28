@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 43
+  m_Name: 43 2
   m_Shader: {fileID: 4800000, guid: 38914eb10ed1ba247b614b138f67c0a3, type: 3}
   m_ValidKeywords:
   - STANDARD
@@ -82,7 +82,7 @@ Material:
     - _GlossyReflections: 1
     - _GridMult: 1
     - _GridSize: 1
-    - _GridStrength: 1
+    - _GridStrength: 0.28
     - _HasColorBlend: 0
     - _HasPBR: 0
     - _HasRotation: 0
@@ -171,5 +171,5 @@ Material:
     - _EmissionColor4: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor4Blend: {r: 0, g: 0, b: 0, a: 1}
     - _GridStart: {r: 64, g: 64, b: 10, a: 0}
-    - _MainOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _MainOffset: {r: 1, g: 2.95, b: 0, a: 0}
   m_BuildTextureStacks: []
