@@ -17,7 +17,9 @@ public class Interact : MonoBehaviour
     [SerializeField] AudioSource[] audioSources;
 
     private void Awake()
-    {   
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         for (int i = 0; i < audioSources.Length; i++)
         {
             audioSources[i] = transform.GetChild(3).GetChild(i).GetComponent<AudioSource>();
