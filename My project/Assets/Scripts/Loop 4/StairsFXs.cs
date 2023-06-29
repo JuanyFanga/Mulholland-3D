@@ -34,9 +34,9 @@ public class StairsFXs : MonoBehaviour
     }
     private void ApplyFX(float dist)
     {
-        playerLight.intensity = beginIntensity - lightDecreaseIntensity / dist;
+        playerLight.intensity = beginIntensity+0.5f - lightDecreaseIntensity / dist;
         Color col = fadeInImage.color;
-        col.a = 1- (dist-3)/ maxHeight;
+        col.a = 1 - (dist+5)/ maxHeight;
       //  col.a = 0.5f +1/dist*1.5f;
         fadeInImage.color = col;
     }
