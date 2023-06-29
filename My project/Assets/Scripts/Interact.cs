@@ -52,6 +52,11 @@ public class Interact : MonoBehaviour
                 pickupableCanvasImage.SetActive(true);
             }
 
+            else if (hit.transform.CompareTag("Backpack") && hasSomethingInHand)
+            {
+                interactuableCanvasImage.SetActive(true);
+            }
+
             else
             {
                 interactuableCanvasImage.SetActive(false);
