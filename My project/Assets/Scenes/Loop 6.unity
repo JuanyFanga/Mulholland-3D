@@ -1914,7 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownToFade: 0
-  timeToStartFading: 0
+  timeToStartFading: -2
   timeToChangeScene: -10
 --- !u!114 &395369021
 MonoBehaviour:
