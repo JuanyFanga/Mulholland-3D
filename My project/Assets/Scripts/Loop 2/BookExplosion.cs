@@ -5,12 +5,23 @@ using UnityEngine;
 public class BookExplosion : MonoBehaviour
 {
     [SerializeField]
+    private AudioClip bookPatear;
+    [SerializeField]
     private Transform explosionOrigin;
 
     [SerializeField]
     private float explosionForce = 4;
     [SerializeField]
     private float explosionRange = 4;
+
+    private AudioSource aus= new AudioSource();
+
+    private void Awake()
+    {
+        aus = gameObject.AddComponent<AudioSource>();
+        aus.clip = bookPatear;
+        aus.volume = Random.Range(0.1f,0.4f);
+    }
 
     private void OnDrawGizmosSelected()
     {
@@ -31,6 +42,8 @@ public class BookExplosion : MonoBehaviour
     [ContextMenu("Explo")]
     public void Explosion()
     {
+        aus.pitch = Random.Range(0.6f, 1.4f);
+        aus.Play();
         var rbs = transform.GetComponentsInChildren<Rigidbody>();
         foreach (var rb in rbs)
         {

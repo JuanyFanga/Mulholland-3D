@@ -3,7 +3,9 @@ guid: a0257be65b988e94dbf6889ddb38e84a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bookPatear: {fileID: 8300000, guid: 040a26d4fb1ecdc47b02554344fea548, type: 3}
+  - explosionOrigin: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
