@@ -885,6 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0257be65b988e94dbf6889ddb38e84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookPatear: {fileID: 8300000, guid: 040a26d4fb1ecdc47b02554344fea548, type: 3}
   explosionOrigin: {fileID: 8372454724004959201}
   explosionForce: 200
   explosionRange: 1.06
