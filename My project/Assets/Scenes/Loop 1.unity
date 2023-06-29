@@ -10270,7 +10270,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Books E
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7616197316493547750, guid: ed3b5ac7b62a966429abf9c9a73e34e7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7616197316493547750, guid: ed3b5ac7b62a966429abf9c9a73e34e7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed3b5ac7b62a966429abf9c9a73e34e7, type: 3}
 --- !u!1001 &1208265147
 PrefabInstance:
@@ -12714,6 +12719,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2137377550}
     m_Modifications:
+    - target: {fileID: 2126477672843889715, guid: 6738772b37e1eba44a7dc6dfb83a22b5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2695985067167196254, guid: 6738772b37e1eba44a7dc6dfb83a22b5, type: 3}
       propertyPath: m_Name
       value: Books
@@ -12774,7 +12783,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 593362342, guid: 6738772b37e1eba44a7dc6dfb83a22b5, type: 3}
+    - {fileID: 2126477672843889715, guid: 6738772b37e1eba44a7dc6dfb83a22b5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6738772b37e1eba44a7dc6dfb83a22b5, type: 3}
 --- !u!1001 &1494007639
 PrefabInstance:
