@@ -13,6 +13,8 @@ public class AscensorTransicion : MonoBehaviour
     [SerializeField]
     GameObject endPoint;
 
+    [SerializeField] float distanceToMove;
+
     private void Update()
     {
         float distanceBetweenEndPointAndPlayer = playerGO.transform.position.z - endPoint.transform.position.z;
@@ -27,10 +29,10 @@ public class AscensorTransicion : MonoBehaviour
 
         float distanceBetweenElevatorAndPlayer = Mathf.Abs(playerGO.transform.position.z - transform.position.z);
 
-        if (distanceBetweenElevatorAndPlayer <= 7)
+        if (distanceBetweenElevatorAndPlayer <= distanceToMove)
         {
             elevatorPosition = transform.position;
-            elevatorPosition.z += 7 - distanceBetweenElevatorAndPlayer;
+            elevatorPosition.z += distanceToMove - distanceBetweenElevatorAndPlayer;
             transform.position = elevatorPosition;
         }
     }
