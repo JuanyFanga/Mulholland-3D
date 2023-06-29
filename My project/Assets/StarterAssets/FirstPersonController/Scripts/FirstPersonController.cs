@@ -82,6 +82,9 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+
+		private bool canMove=false;
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -122,6 +125,11 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if (!canMove)
+			{
+				return;
+			}
+
 			moveCooldown -= Time.deltaTime;
 			if (moveCooldown <= 0)
             {
@@ -135,6 +143,10 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
+			if (!canMove)
+			{
+				return;
+			}
 			CameraRotation();
 		}
 
@@ -296,6 +308,12 @@ namespace StarterAssets
 		public void ChangeSpeed(int newSpeed)
 		{
 			MoveSpeed = newSpeed;
+		}
+
+		public void CanMove()
+		{
+			print("hola");
+			canMove = true;
 		}
 	}
 
