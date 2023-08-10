@@ -11361,6 +11361,10 @@ PrefabInstance:
       value: -543.308
       objectReference: {fileID: 0}
     - target: {fileID: 4160825680870813326, guid: 4b211168c702d4c48af290fa2e5a3f1c, type: 3}
+      propertyPath: m_text
+      value: Cargando...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160825680870813326, guid: 4b211168c702d4c48af290fa2e5a3f1c, type: 3}
       propertyPath: m_fontSize
       value: 0.66
       objectReference: {fileID: 0}
