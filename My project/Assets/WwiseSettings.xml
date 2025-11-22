@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <WwiseProjectPath>C:/Users/user/Downloads/TP2_Baldan-Fangano-Rubio/TP1_Baldan-Fangano-Rubio.wproj</WwiseProjectPath>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <WwiseInstallationPathWindows>D:\AudioThings\Wwise2021.1.14.8108</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
