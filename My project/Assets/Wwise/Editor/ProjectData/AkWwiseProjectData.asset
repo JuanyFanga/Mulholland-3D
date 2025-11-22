@@ -83,8 +83,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 7d982bbed2a5d84e93eb34ada495787f
     GuidInternal: 
-    m_lastTime: -8584437113054775808
-    List: []
+    m_lastTime: -8584377926444360889
+    List:
+    - name: Main_SoundBank
+      guid: 001dbc956e3f704ba9f97cf09209793a
+      id: 2228651116
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7d982bbed2a5d84e93eb34ada495787f
+      - ElementName: Main_SoundBank
+        ObjectType: 7
+        guid: 001dbc956e3f704ba9f97cf09209793a
+      Path: SoundBanks\Default Work Unit\Main_SoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -131,8 +145,8 @@ MonoBehaviour:
         guid: e40c9817fcf9fd4089c2592ecbfa496f
       Path: Events\Default Work Unit\Play_Footsteps_SC
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.58
+      minDuration: 0.193742
     - name: Play_Fridge_Engine_SFX
       guid: 10605e862e2e3c4c83b47d0e2a8d7534
       id: 2106759498
@@ -199,8 +213,8 @@ MonoBehaviour:
         guid: 76249e93ce2c2a4db3a2374d6871e85f
       Path: Events\Default Work Unit\Play_Random_Ambience_SFX
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.012426
+      minDuration: 1.389635
     - name: Play_StoryPedalNotes
       guid: d84a32c660bee94ebbe5a07504e15d19
       id: 3330265446
@@ -216,8 +230,8 @@ MonoBehaviour:
         guid: d84a32c660bee94ebbe5a07504e15d19
       Path: Events\Default Work Unit\Play_StoryPedalNotes
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 40.87808
+      minDuration: 35.889687
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -567,7 +581,7 @@ MonoBehaviour:
     m_lastTime: -8584437113054775808
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
