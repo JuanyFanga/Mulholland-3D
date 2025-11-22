@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935712e7752cf5846a92c86c59b9c54b, type: 3}
+  m_Name: 2575485B-3B45-4F91-99BE-5C1C44307412
+  m_EditorClassIdentifier: 
+  objectName: Reverb_On
+  id: 4108544803
+  guid: 2575485B-3B45-4F91-99BE-5C1C44307412
+  WwiseStateGroupReference: {fileID: 11400000, guid: 464fcfbdd32df054099e164397ae5394, type: 2}
