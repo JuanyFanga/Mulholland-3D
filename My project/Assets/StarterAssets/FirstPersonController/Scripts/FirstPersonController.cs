@@ -83,7 +83,7 @@ namespace StarterAssets
 		private const float _threshold = 0.01f;
 
 
-		private bool canMove=false;
+		private bool canMove;
 
 		private bool IsCurrentDeviceMouse
 		{
@@ -121,6 +121,7 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+			CanMove();
 		}
 
 		private void Update()

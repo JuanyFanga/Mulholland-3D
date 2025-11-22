@@ -1,5 +1,5 @@
 {
-    "originalSdkFolder": "D:\\AudioThings\\Wwise2021.1.14.8108\\SDK",
+    "originalSdkFolder": "C:\\Audiokinetic\\Wwise2021.1.14.8108\\SDK",
     "currentVersion": {
         "nickname": "",
         "build": 2676,
@@ -15,6 +15,18 @@
         {
             "id": "Packages",
             "valueId": "Extensions"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        },
+        {
+            "id": "Packages",
+            "valueId": "Unity"
         },
         {
             "id": "DeploymentPlatforms",

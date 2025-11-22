@@ -1,18 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
-  <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-  <CreatedPicker>true</CreatedPicker>
-  <CreateWwiseGlobal>true</CreateWwiseGlobal>
-  <CreateWwiseListener>true</CreateWwiseListener>
-  <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
-  <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
-  <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>D:\AudioThings\Wwise2021.1.14.8108</WwiseInstallationPathWindows>
-  <WwiseProjectPath>C:/Users/user/Downloads/TP2_Baldan-Fangano-Rubio/TP1_Baldan-Fangano-Rubio.wproj</WwiseProjectPath>
-  <UseWaapi>true</UseWaapi>
-  <WaapiPort>8080</WaapiPort>
-  <WaapiIP>127.0.0.1</WaapiIP>
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
+    <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <CreatedPicker>true</CreatedPicker>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
+    <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
+    <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+    <WwiseInstallationPathWindows>C:\Audiokinetic\Wwise2021.1.14.8108</WwiseInstallationPathWindows>
+    <WwiseProjectPath>../../../../../Descargas/TP2_Baldan-Fangano-Rubio soundbanks/TP1_Baldan-Fangano-Rubio.wproj</WwiseProjectPath>
+    <UseWaapi>true</UseWaapi>
+    <WaapiPort>8080</WaapiPort>
+    <WaapiIP>127.0.0.1</WaapiIP>
 </WwiseSettings>
