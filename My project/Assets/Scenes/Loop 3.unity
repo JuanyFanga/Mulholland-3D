@@ -20949,9 +20949,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e9eaeeb037ed7c24e83b18230f721e90, type: 2}
-  controller: {fileID: 0}
+  controller: {fileID: 1507867789113976230}
   speedThreshold: 0.1
   walkInterval: 0.45
+--- !u!143 &1507867789113976230 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228382, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 1507867789113976211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1949039866692037800
 PrefabInstance:
   m_ObjectHideFlags: 0

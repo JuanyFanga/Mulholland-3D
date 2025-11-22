@@ -8,7 +8,7 @@ public class Footsteps : MonoBehaviour
     public AK.Wwise.Event footstepEvent; 
 
     [Header("Movement")]
-    public Rigidbody controller;
+    public CharacterController controller;
     public float speedThreshold = 0.1f; 
 
     [Header("Footstep Timing")]
