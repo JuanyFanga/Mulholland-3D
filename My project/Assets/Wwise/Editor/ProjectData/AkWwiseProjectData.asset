@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 10605e862e2e3c4c83b47d0e2a8d7534
       Path: Events\Default Work Unit\Play_Fridge_Engine_SFX
-      maxAttenuation: 0
+      maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
     - name: Play_Insanity_BC
