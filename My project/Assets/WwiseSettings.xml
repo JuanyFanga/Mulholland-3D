@@ -10,8 +10,8 @@
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>D:\AudioThings\Wwise2021.1.14.8108</WwiseInstallationPathWindows>
-  <WwiseProjectPath>C:/Users/user/Downloads/TP2_Baldan-Fangano-Rubio/TP1_Baldan-Fangano-Rubio.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>D:\Wwise</WwiseInstallationPathWindows>
+  <WwiseProjectPath>D:/UADE/Música y Sonido/TP2_Baldan-Fangano-Rubio 1/TP1_Baldan-Fangano-Rubio.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

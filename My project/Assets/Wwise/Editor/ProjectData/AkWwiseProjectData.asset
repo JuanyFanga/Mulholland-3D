@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b4cfe97e42ae4a4fa68fa9472de10886
     GuidInternal: 
-    m_lastTime: -8584433664434775808
+    m_lastTime: -8584373231621427250
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 10605e862e2e3c4c83b47d0e2a8d7534
       Path: Events\Default Work Unit\Play_Fridge_Engine_SFX
-      maxAttenuation: 15
+      maxAttenuation: 12
       maxDuration: -1
       minDuration: -1
     - name: Play_Insanity_BC
